@@ -247,7 +247,7 @@ console.log(
 
   for (let i = 0; i < array.length; i++) {
     for (let j = 0; j < array[i].length; j++) {
-      if (array[i][j] === array[i + 1][j] && array[i][j] === array[i + 2][j]) {
+      if (array[i+1] && array[i+2] && array[i][j] === array[i+1][j] && array[i][j] === array[i+2][j]) {
         resultado = true;
         return resultado;
       } else {
