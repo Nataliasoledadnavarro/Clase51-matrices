@@ -114,7 +114,6 @@ console.log(generarGrilla(3, 3, ["a", "b", "c"]));
 
 //5 Definí una función generarMatrizEscalonada que reciba como argumento un número entero filas y devuelva un array 2d con la cantidad de filas filas, donde la primera fila tiene 1 columna, la segunda tiene 2, la tercera 3, y así sucesivamente. Los ítems de la matriz deben ser 0.
 
-// NO FUNCIONA
 /*const generarMatrizEscalonada = (numero) => {
   let matriz = [];
 
@@ -124,12 +123,12 @@ console.log(generarGrilla(3, 3, ["a", "b", "c"]));
     matriz.push(array);
     for (let j = 0; j < numero; j++) {
       acc = acc + "0";
-      array.push(acc);
+      array.push([acc]);
     }
   }
 
-  return matriz;
-};*/
+  return matriz[0];
+}*/
 //console.log(generarMatrizEscalonada(3));
 /*[
    [0], 
@@ -140,7 +139,6 @@ console.log(generarGrilla(3, 3, ["a", "b", "c"]));
 /*[
   ([0], [0, 0], [0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0, 0])
 ];*/
-
 //6 Definí una función obtenerFilaMasLarga que reciba como argumento un array 2d matriz y devuelva el array (fila) que tenga mayor longitud. Si hay varios de igual longitud, debe devolver el primero de ellos.
 
 /*const obtenerFilaMasLarga = (matriz) => {
@@ -204,6 +202,31 @@ for (let i = 0; i < array.length; i++) {
  console.log(convertirEnMatriz(4, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]))
 //[[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11]]*/
 
+//9 Tenemos una matriz que tiene la estructura de una tabla , en donde el primer array contiene el nombre de las columnas, y los siguientes array son las filas donde se ingresan los registros con sus datos en el orden de las columnas. Por ejemplo, si el índice 1 es la columna nombre todas las demás "filas" deben tener el dato nombre en esa posición. La tabla siempre tiene una columna id, que es un identificador único para cada registro (un número incremental).
+/*const tabla = [
+  ['id', 'nombre', 'edad', 'email'],
+  [1, 'Ada', 33, 'ada@gmail.com'],
+  [2, 'Grace', 45, 'grace@gmail.com'],
+]
+
+//Definí la función consultarTablaque tome por parámetro un número id, un string columna, y una matriz tabla y que retorne el valor del dato de la columna dada para el registro con el id indicado.
+
+const consultarTabla = (id, columna, tabla) =>{
+
+  for (let i = 0; i < tabla.length; i++) {
+    
+    for (let j = 0; j < tabla[i].length; j++) {
+      
+      
+    }   
+  }
+}
+
+ console.log(consultarTabla(2, 'nombre', tabla))
+//'Grace'
+ conole.log(consultarTabla(1, 'email', tabla))
+//'ada@gmail.com'
+*/
 
 //10 Definí una función tieneBloqueHorizontal que reciba como argumento un array 2d matriz y devuelva si dicha matriz tiene un bloque horizontal de 3 o más ítems consecutivos idénticos.
 
